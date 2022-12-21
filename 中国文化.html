@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>中国文化</title>
+<!-- for-mobile-apps -->
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widdth=device-width,initial-scale=1.0">
+    <title>Document</title>
+<!---->
+<script src="js/echarts.min.js"></script>
+<script src="js/"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tutelage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- fonts -->
+<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='#css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<style>
+	#main,
+	html,
+	body{
+	  width:100%;
+	}
+	#main{
+	  height:400px;
+	}
+  </style>
+  
+<body>
+<!-- header -->
+<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <h1><a class="navbar-brand" href="首页.html"><i class="glyphicon glyphicon-education" aria-hidden="true"></i><span>中国</span>一级博物馆</a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a class="hvr-overline-from-center button2 active" href="首页.html">首页</a></li>
+							<li><a class="hvr-overline-from-center button2" href="中秋节.html">中秋节</a></li>
+							
+							<li><a class="hvr-overline-from-center button2" href="中国文化.html">中国文化</a></li>
+							<li><a class="hvr-overline-from-center button2" href="中国文化查询.html">中国文化查询</a></li></ul>
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="搜索..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+					</div><!-- /navbar-collapse -->
+					
+					<!-- search-scripts -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //search-scripts -->
+				</nav>
+			</div>
+		</div>
+</div>
+<!-- header -->
+<!-- banner -->
+<div class="banner page-head">
+</div>
+<!-- //banner -->
+<!-- services -->
+<body>
+	<div id="main" style="width: 800px;height: 600px"></div>
+	<script type="text/javascript">
+	   // 基于准备好的dom，初始化echarts实例
+	   var myChart = echarts.init(document.getElementById('main'));
+  
+  // 指定图表的配置项和数据
+  var option = {
+	title: {
+	  text: '博物馆周人流量'
+	},
+	tooltip: {
+	  trigger: 'axis',
+	  axisPointer: {
+		type: 'cross',
+		label: {
+		  backgroundColor: '#6a7985'
+		}
+	  }
+	},
+	legend: {
+	  data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+	},
+	toolbox: {
+	  feature: {
+		saveAsImage: {}
+	  }
+	},
+	grid: {
+	  left: '3%',
+	  right: '4%',
+	  bottom: '3%',
+	  containLabel: true
+	},
+	xAxis: [
+	  {
+		type: 'category',
+		boundaryGap: false,
+		data: ['周一', '周二', '周三', '周四', '周五', '周六', '周天']
+	  }
+	],
+	yAxis: [
+	  {
+		type: 'value'
+	  }
+	],
+	series: [
+	  {
+		name: '浙江博物馆',
+		type: 'line',
+		stack: 'Total',
+		areaStyle: {},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [120, 132, 101, 134, 90, 230, 210]
+	  },
+	  {
+		name: '天津博物馆',
+		type: 'line',
+		stack: 'Total',
+		areaStyle: {},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [220, 182, 191, 234, 290, 330, 310]
+	  },
+	  {
+		name: '湖南博物馆',
+		type: 'line',
+		stack: 'Total',
+		areaStyle: {},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [150, 232, 201, 154, 190, 330, 410]
+	  },
+	  {
+		name: '四川博物馆',
+		type: 'line',
+		stack: 'Total',
+		areaStyle: {},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [320, 332, 301, 334, 390, 330, 320]
+	  },
+	  {
+		name: '北京博物馆',
+		type: 'line',
+		stack: 'Total',
+		label: {
+		  show: true,
+		  position: 'top'
+		},
+		areaStyle: {},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [820, 932, 901, 934, 1290, 1330, 1320]
+	  }
+	]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+	</script>
+	</body>
+	<div class="services-top">
+			<div class="container">
+				<div class="services-info">
+					<h3 class="tittle">琴棋书画简要</h3>
+				</div>
+				<div class="ser-top-grids">
+					<div class="col-md-8 ser-top-grid">
+						<div class="ser-top-img">
+							<img src="images/15.png" alt=" "/>
+						</div>
+						<div class="ser-top-txt">
+							
+							<p>琴棋书画是中国四大才艺。属于四大雅事，又称雅人四好。
+
+在我国古时被称为“四艺”，琴指古琴，代表民族传统音乐；棋，特指围棋；书，指书法，而非书籍；画即绘画，特指国画，即水墨丹青。琴棋书画是文人骚客及名门闺秀修身所必须掌握的技能。
+
+琴棋书画这四类国学文化是修炼性情的文化。讲究的是恭敬，端正，心平气和，把自己的心全然安定下来。</p>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-4 ser-top-grid">
+						<ul>
+							<li><a href="#">了解更多</a></li>
+							
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+	</div>
+	<div class="services">
+		<div class="container">
+				<div class="services-info">
+					<h3 class="tittle">二十四气节</h3>
+				</div>
+				<div class="services-grids">
+					<div class="row">
+						<div class="col-md-6 services-grid">
+								<div class="ser-img">
+									<img src="images/pic1.jpg" alt=" "/>
+								</div>
+								<div class="caption">
+									<h4>春</h4>
+									<p>立春(2月4日)、雨水(2月19日)、惊蛰(3月6日)<br>
+									春分(3月21日)、清明(4月5日)、谷雨(4月21日)
+									</p>
+									
+								</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="col-md-6 services-grid">
+								<div class="ser-img">
+									<img src="images/pic2.jpg" alt=" "/>
+								</div>
+								<div class="caption">
+									<h4>夏</h4>
+									<p>立夏(5月6日)、小满(5月21日)、芒种(6月6日)<br>
+									夏至(6月22日)、小暑(7月7日)、大暑(7月23日)
+									</p>
+								</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="col-md-6 services-grid">
+								<div class="ser-img">
+									<img src="images/pic3.jpg" alt=" "/>
+								</div>
+								<div class="caption">
+									<h4>秋</h4>
+									<p>立秋(8月8日)、处暑(8月23日)、白露(9月8日)<br>
+									秋分(9月23日)、寒露(10月8日)、霜降(10月23日)
+									</p>
+								</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="col-md-6 services-grid">
+								<div class="ser-img">
+									<img src="images/pic4.jpg" alt=" "/>
+								</div>
+								<div class="caption">
+									<h4>冬</h4>
+									<p>立冬(11月8日)、小雪(11月23日)、大雪(12月8日)<br>
+									冬至(12月21日)、小寒(元月6日)、大寒(元月21日)
+									</p>
+								</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		
+	<p>2020110049彭益</p>
+	</div>
+</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>
